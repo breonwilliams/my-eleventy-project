@@ -18,32 +18,32 @@ Here's how you can get the project up and running on your local machine:
 
 Clone the repository to your local machine:
 
-\```bash
+```bash
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
-\```
+```
 
 ### Step 2: Install Dependencies
 
 Install the necessary npm packages:
 
-\```bash
+```bash
 npm install
-\```
+```
 
 ### Step 3: Run Eleventy
 
 Start the Eleventy development server:
 
-\```bash
+```bash
 npx @11ty/eleventy --serve
-\```
+```
 
 or if you have a predefined script in `package.json`:
 
-\```bash
+```bash
 npm start
-\```
+```
 
 This will compile the site and serve it on `localhost:8080`.
 
@@ -51,9 +51,9 @@ This will compile the site and serve it on `localhost:8080`.
 
 If the project uses SCSS, you might need to compile it separately:
 
-\```bash
+```bash
 npm run build:scss
-\```
+```
 
 This compiles the SCSS files into CSS. Check the `package.json` for the exact command.
 
@@ -68,9 +68,9 @@ This compiles the SCSS files into CSS. Check the `package.json` for the exact co
 
 To build the site for production, run:
 
-\```bash
+```bash
 npx @11ty/eleventy
-\```
+```
 
 This command generates static files in the `_site/` directory.
 
