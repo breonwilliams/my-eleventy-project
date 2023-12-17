@@ -1,0 +1,25 @@
+{
+    "name": "my-eleventy-project",
+    "version": "1.0.0",
+    "description": "A simple Eleventy project with SCSS support.",
+    "main": "index.js",
+    "scripts": {
+        "build:scss": "node-sass src/scss/main.scss _site/css/main.css",
+        "watch:scss": "sass src/scss/main.scss:_site/css/main.css --watch",
+        "build": "eleventy",
+        "serve": "eleventy --serve",
+        "start": "npm-run-all --parallel serve watch:scss"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@11ty/eleventy": "^0.12.1",
+        "npm-run-all": "^4.1.5",
+        "sass": "^1.69.5"
+    },
+    "dependencies": {
+        "@popperjs/core": "^2.11.8",
+        "bootstrap": "^5.3.2"
+    }
+}
